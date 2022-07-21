@@ -3,11 +3,7 @@ import java.util.Scanner;
 public class Calculator {
 	public static Double  number1, number2, result;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 	   char operator;
-	   
-
-	    // create an object of Scanner class
 	    Scanner input = new Scanner(System.in);
 
 	    // ask users to enter operator
@@ -46,7 +42,8 @@ public class Calculator {
 	        result = number1 / number2;
 	        System.out.println(number1 + " / " + number2 + " = " + result);
 	        break;
-
+	      
+	//Calls percentage method
 	      case '%':
 	    	 CalPercentage();
 	    	break; 
@@ -60,7 +57,7 @@ public class Calculator {
 	  }
 	
 	public static void CalPercentage() {
-		double percentage = ((number1/number2)*100);
+	double percentage = ((number1/number2)*100);
     	System.out.println("First number is " + percentage + "% of the Second number");
-    }
+    		}
 	}
